@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Macaroons</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <div class="logo">
-                <span>Macaroons</span>
+                <span class="logo__text">Macaroons</span>
             </div>
             <nav class="menu">
                 <ul class="menu__list">
@@ -32,16 +33,16 @@
         </div>
     </header>
     <section class="main">
-        <div class="container">
+        <div class="container main__container">
             <div class="main__info">
-                <h1 class="title">
+                <h1 class="main__title">
                     Мягкие французские
                     пироженки Macaroons
                 </h1>
-                <p class="proposition">
+                <p class="main__proposition">
                     Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками Macaroon!
                 </p>
-                <button class="action">Выбрать макарун</button>
+                <button class="action main__action">Выбрать макарун</button>
             </div>
             <div class="main__img">
                 <img src="images/mainmacaroons.png" alt="macaroons">
@@ -67,30 +68,30 @@
             </div>
             <ul class="advantages__list">
                 <li class="advantages__item">
-                    <div class="item__point"><span class="item__number">1</span></div>
-                    <span class="item__title">Лучшие продукты</span>
-                    <p class="item__description">
+                    <div class="advantages__item__circle"><span class="advantages__item__number">1</span></div>
+                    <span class="advantages__item__title">Лучшие продукты</span>
+                    <p class="advantages__item__description">
                         Мы честно готовим макаруны только из натуральных и качественных продуктов. Мы не используем консерванты, ароматизаторы и красители.
                     </p>
                 </li>
                 <li class="advantages__item">
-                    <div class="item__point"><span class="item__number">2</span></div>
-                    <span class="item__title">Много вкусов</span>
-                    <p class="item__description">
+                    <div class="advantages__item__circle"><span class="advantages__item__number">2</span></div>
+                    <span class="advantages__item__title">Много вкусов</span>
+                    <p class="advantages__item__description">
                         Наша задача – предоставить вам широкое разнобразие вкусов. Вы удивитесь, но у нас более 70 вкусов пироженок.
                     </p>
                 </li>
-                <li class="item__item">
-                    <div class="advantages__point"><span class="item__number">3</span></div>
-                    <span class="item__title">Бисквитное тесто</span>
-                    <p class="item__description">
+                <li class="advantages__item">
+                    <div class="advantages__item__circle"><span class="advantages__item__number">3</span></div>
+                    <span class="advantages__item__title">Бисквитное тесто</span>
+                    <p class="advantages__item__description">
                         Все пирожные готовятся на бисквитном тесте с  качественным сливочным маслом 82,5%. В составе нет маргарина и дрожжей!
                     </p>
                 </li>
                 <li class="advantages__item">
-                    <div class="item__point"><span class="item__number">4</span></div>
-                    <span class="item__title">Честный продукт</span>
-                    <p class="item__description">
+                    <div class="advantages__item__circle"><span class="advantages__item__number">4</span></div>
+                    <span class="advantages__item__title">Честный продукт</span>
+                    <p class="advantages__item__description">
                         Вкус, качество и безопасность наших пирогов подтверждена декларацией о соответствии, которую мы получили 22.06.2016 г.
                     </p>
                 </li>
@@ -98,49 +99,58 @@
         </div>
     </section>
     <section class="choice">
-        <div class="container">
+        <div class="container choice__container">
+            <h2 class="choice__title">Выберите свой макарун</h2>
             <ul class="choice__list">
                 <li class="choice__item">
                     <img class="choice__item-img" src="images/mmalina.png" alt="macaroon malina">
                     <span class="choice__item-title">Макарун с малиной</span>
-                    <div class="choice__item-info">
-                        <span class="item-info__quantity">1 шт.</span>
-                        <span class="item-info__price">1,70 руб.</span>
+                    <div class="choice-item__container">
+                        <div class="choice__item-info">
+                            <span class="item-info__quantity">1 шт.</span>
+                            <span class="item-info__price">1,70 руб.</span>
+                        </div>
+                        <button class="action choice__item-button">Заказать</button>
                     </div>
-                    <button class="action choice__item-button">Заказать</button>
                 </li>
                 <li class="choice__item">
                     <img class="choice__item-img" src="images/macmango.png" alt="macaroon mango">
                     <span class="choice__item-title">Макарун с манго</span>
-                    <div class="choice__item-info">
-                        <span class="item-info__quantity">1 шт.</span>
-                        <span class="item-info__price">1,70 руб.</span>
+                    <div class="choice-item__container">
+                        <div class="choice__item-info">
+                            <span class="item-info__quantity">1 шт.</span>
+                            <span class="item-info__price">1,70 руб.</span>
+                        </div>
+                        <button class="action choice__item-button">Заказать</button>
                     </div>
-                    <button class="action choice__item-button">Заказать</button>
                 </li>
                 <li class="choice__item">
-                    <img class="choice__item-img" src="images/macmango.png" alt="macaroon mango">
+                    <img class="choice__item-img" src="images/vanilla.png" alt="macaroon mango">
                     <span class="choice__item-title">Пирог с ванилью</span>
-                    <div class="choice__item-info">
-                        <span class="item-info__quantity">1 шт.</span>
-                        <span class="item-info__price">1,70 руб.</span>
+                    <div class="choice-item__container">
+                        <div class="choice__item-info">
+                            <span class="item-info__quantity">1 шт.</span>
+                            <span class="item-info__price">1,70 руб.</span>
+                        </div>
+                        <button class="action choice__item-button">Заказать</button>
                     </div>
-                    <button class="action choice__item-button">Заказать</button>
                 </li>
                 <li class="choice__item">
-                    <img class="choice__item-img" src="images/macmango.png" alt="macaroon mango">
+                    <img class="choice__item-img" src="images/pistachio.png" alt="macaroon mango">
                     <span class="choice__item-title">Пирог с фисташками</span>
-                    <div class="choice__item-info">
-                        <span class="item-info__quantity">1 шт.</span>
-                        <span class="item-info__price">1,70 руб.</span>
+                    <div class="choice-item__container">
+                        <div class="choice__item-info">
+                            <span class="item-info__quantity">1 шт.</span>
+                            <span class="item-info__price">1,70 руб.</span>
+                        </div>
+                        <button class="action choice__item-button">Заказать</button>
                     </div>
-                    <button class="action choice__item-button">Заказать</button>
                 </li>
             </ul>
         </div>
     </section>
     <section class="order">
-        <div class="container">
+        <div class="container order__container">
             <div class="order__img">
                 <img class="img_shaky" src="images/strawberry.png" alt="shaky strawberry">
                 <img src="images/macarons4.png" alt="4 macaroons" class="img__macaroons">
@@ -149,25 +159,25 @@
                 <h2 class="order__title">Закажите макарун!</h2>
                 <p class="order__description">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!</p>
                 <form action="" class="order__form">
-                    <label>Ваш выбор:<br>
-                        <input type="text" placeholder="Напишите, что хотите заказать">
-                    </label>
-                    <label>Заполните данные для заказа<br>
-                        <input type="text" placeholder="Ваше имя">
-                    </label>
-                    <label>Заполните данные для заказа<br>
-                        <input type="tel" placeholder="+375()">
-                    </label>
+                    <label for="choice" class="order__input__title">Ваш выбор:</label>
+                        <input id="choice" type="text" class="order__input order__input__choice" placeholder="Напишите, что хотите заказать...">
+                    <label for="name" class="order__input__title">Заполните данные для заказа</label>
+                        <input id="name" type="text" class="order__input order__input__name" placeholder="Ваше имя">
+                    <label for="tel"></label>
+                        <input id="tel" type="tel" class="order__input" placeholder="+375()">
+
                     <button class="action order__form-button">Оформить заказ</button>
                 </form>
             </div>
+            <img class="img_shaky-right" src="images/strawberry2.png" alt="shaky strawberry">
+
         </div>
     </section>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__info">
                 <div class="logo">
-                    <span>Macaroons</span>
+                    <span class="logo__text">Macaroons</span>
                 </div>
                 <span class="copyrights">Все права защищены, 2020</span>
             </div>
@@ -179,15 +189,15 @@
             </div>
             <span class="contact">+375 (29) 368-98-68</span>
         </div>
-        <div class="present">
-            <span class="present__text">
-                Оформите заказ
-                и получите подарок!
-            </span>
-            <div class="present__block">
-                <img src="images/present.png" alt="present" class="present__img">
-            </div>
-        </div>
+<!--        <div class="present">-->
+<!--            <span class="present__text">-->
+<!--                Оформите заказ-->
+<!--                и получите подарок!-->
+<!--            </span>-->
+<!--            <div class="present__block">-->
+<!--                <img src="images/present.png" alt="present" class="present__img">-->
+<!--            </div>-->
+<!--        </div>-->
     </footer>
 </body>
 </html>
