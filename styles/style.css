@@ -69,7 +69,7 @@
 }
 
 .menu__link {
-    font-size: 19px;
+    font-size: 14px;
     color: #821328;
     margin-right: 40px;
     text-decoration: underline;
@@ -86,13 +86,13 @@
 .logo__text {
     font-family: Tavolga, sans-serif;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
     color: #ffffff;
 }
 
-.contact {
+.header__contact, .footer__contact {
     font-family: GilroyMedium, sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     color: #ffffff;
 }
 
@@ -183,7 +183,7 @@
 
 .advantages__img {
     margin-top: 70px;
-    width: 520px;
+    max-width: 520px;
     height: 314px;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .advantages__info {
-    max-width: 528px;
+    max-width: 700px;
 }
 
 .advantages__title {
@@ -213,7 +213,7 @@
 }
 
 .advantages__item {
-    width: 219px;
+    max-width: 219px;
 }
 
 .advantages__item:hover .advantages__item__circle {
@@ -268,7 +268,7 @@
     text-align: center;
     font-family: Tavolga, sans-serif;
     font-size: 50px;
-    color: #331907;
+    color: #ffffff;
 }
 
 .choice__list {
@@ -281,7 +281,6 @@
 .choice__item {
     display: grid;
     grid-template-columns: 259px;
-    /*grid-template-rows: 2fr 1fr;*/
     justify-items: center;
     max-width: 263px;
     height: 225px;
@@ -368,6 +367,7 @@
     font-family: Tavolga, sans-serif;
     font-size: 45px;
     color: #821328;
+
 }
 
 .order__description {
@@ -419,7 +419,7 @@
 .img_shaky-right {
     position: relative;
     top: 524px;
-    left: -50px;
+    left: -40px;
     width: 50px;
     height: 66px;
     animation: up-and-down 2s infinite;
@@ -446,7 +446,7 @@
 
 .insta__link {
     font-family: GilroyBold, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -467,6 +467,7 @@
     bottom: 29px;
     width: 90px;
     height: 90px;
+    z-index: 2;
 }
 
 .present__block {
