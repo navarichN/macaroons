@@ -61,6 +61,10 @@
     align-items: center;
 }
 
+.header__burger {
+    display: none;
+}
+
 .menu__list {
     display: flex;
     flex-direction: row;
@@ -332,10 +336,6 @@
     color: #ffffff;
 }
 
-.choice__item-button:hover .choice__item-img {
-
-}
-
 .order {
     height: 780px;
     background-color: #ffefef;
@@ -367,7 +367,6 @@
     font-family: Tavolga, sans-serif;
     font-size: 45px;
     color: #821328;
-
 }
 
 .order__description {
@@ -383,7 +382,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 294px;
+    width: 294px;
     height: 390px;
 }
 
