@@ -265,6 +265,10 @@
         display: flex;
     }
 
+    .menu.open #burger {
+        display: none;
+    }
+
     .menu .close {
         display: block;
         width: 24px;
@@ -291,6 +295,7 @@
     .menu__link {
         color: #ffffff;
         text-decoration: none;
+        margin-right: 0;
     }
 
     .main {
