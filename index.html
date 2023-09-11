@@ -17,27 +17,25 @@
             <div class="logo">
                 <span class="logo__text">Macaroons</span>
             </div>
-            <nav class="menu">
+            <nav class="menu" id="menu">
+                <div class="close">
+                    <img src="images/close.png" alt="burger close">
+                </div>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Пироженки</a>
+                        <a href="#choice" class="menu__link">Пироженки</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">О нас</a>
+                        <a href="#about" class="menu__link">О нас</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Оформить заказ</a>
+                        <a href="#order" class="menu__link">Оформить заказ</a>
                     </li>
                 </ul>
             </nav>
             <span class="header__contact">+375 (29) 368-98-68</span>
-            <div class="header__burger" id="burger">
-                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                <svg width="40px" height="36px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 18L20 18" stroke="#821328" stroke-width="2" stroke-linecap="butt"/>
-                    <path d="M4 12L20 12" stroke="#821328" stroke-width="2" stroke-linecap="butt"/>
-                    <path d="M4 6L20 6" stroke="#821328" stroke-width="2" stroke-linecap="butt"/>
-                </svg>
+            <div class="burger" id="burger">
+                <img src="images/burger.png" alt="burger">
             </div>
         </div>
     </header>
@@ -63,7 +61,7 @@
 
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="about">
         <div class="container advantages__container">
             <div class="advantages__main">
                 <div class="advantages__info">
@@ -112,7 +110,7 @@
             </ul>
         </div>
     </section>
-    <section class="choice">
+    <section class="choice" id="choice">
         <div class="container choice__container">
             <h2 class="choice__title">Выберите свой макарун</h2>
             <ul class="choice__list">
@@ -163,7 +161,7 @@
             </ul>
         </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
         <div class="container order__container">
             <div class="order__img">
                 <img class="img_shaky" src="images/strawberry.png" alt="shaky strawberry">
@@ -174,7 +172,7 @@
                 <p class="order__description">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!</p>
                 <form action="" class="order__form">
                     <label for="choice" class="order__input__title">Ваш выбор</label>
-                        <input id="choice" type="text" class="order__input order__input__choice" placeholder="Напишите, что хотите заказать...">
+                        <input id="choose" type="text" class="order__input order__input__choice" placeholder="Напишите, что хотите заказать...">
                     <label for="name" class="order__input__title">Заполните данные для заказа</label>
                         <input id="name" type="text" class="order__input order__input__name" placeholder="Ваше имя">
                     <label for="tel"></label>
@@ -226,5 +224,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('burger').onclick = function () {
+            document.getElementById('menu').classList.add('open')
+        }
+
+        document.querySelectorAll('#menu *').forEach((item) => {
+            item.onclick = () => {
+                document.getElementById('menu').classList.remove('open');
+            }
+        })
+    </script>
 </body>
 </html>

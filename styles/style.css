@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Gilroy;
+    font-family: GilroyRegular;
     src: url("../fonts/Gilroy-Regular.ttf");
 }
 
@@ -51,6 +51,7 @@
 
 .header {
     background-color: #eba8b1;
+    overflow: hidden;
 }
 
 .header__container {
@@ -61,7 +62,11 @@
     align-items: center;
 }
 
-.header__burger {
+.burger {
+    display: none;
+}
+
+.close {
     display: none;
 }
 
@@ -103,6 +108,7 @@
 .main {
     margin-top: 0;
     background-color: #eba8b1;
+    overflow: hidden;
 }
 
 .main__container {
@@ -121,6 +127,7 @@
     font-size: 54px;
     color: #ffffff;
     font-weight: lighter;
+    z-index: -3;
 }
 
 .main__proposition {
@@ -142,15 +149,15 @@
 .main__circles {
     position: relative;
     bottom: 451px;
-    left: 55px;
-    width: 200px;
-    height: 200px;
-    z-index: -1;
+    left: 28px;
+    z-index: -100;
+    width: 552px;
+    height: 552px;
 }
 
 .main__first-circle {
-    width: 456px;
-    height: 454px;
+    width: 488px;
+    height: 488px;
     border-radius: 50%;
     animation: circle-scale-second 2s ease infinite;
     animation-delay: 0.3s;
@@ -158,10 +165,10 @@
 
 .main__second-circle {
     position: relative;
-    bottom: 524px;
-    right: 65px;
-    width: 585px;
-    height: 585px;
+    bottom: 557px;
+    right: 70px;
+    width: 620px;
+    height: 620px;
     border-radius: 50%;
     animation: circle-scale 2s ease infinite;
 }
@@ -199,7 +206,7 @@
 }
 
 .advantages__info {
-    max-width: 700px;
+    max-width: 630px;
 }
 
 .advantages__title {
@@ -339,6 +346,7 @@
 .order {
     height: 780px;
     background-color: #ffefef;
+    overflow: hidden;
 }
 
 .order__img {
@@ -413,6 +421,7 @@
 
 .order__form-button {
     height: 60px;
+    color: #ffffff;
 }
 
 .img_shaky-right {
@@ -479,11 +488,11 @@
 }
 
 .present__text {
-    display: none;
+    display: block;
     position: absolute;
     padding-top: 12px;
     padding-left: 18px;
-    top: 16px;
+    top: 120px;
     right: 92px;
     width: 183px;
     height: 64px;
@@ -492,15 +501,15 @@
     font-size: 15px;
     background: no-repeat url("/images/rect.png");
     color: #821328;
+    transition: all 0.5s ease;
 }
 
 .present__block:hover {
     box-shadow: 0px 0px 12.6px 2.4px rgba(130, 19, 40, 0.5);
 }
 
-.present__block:hover .present__text {
-    top: 15px;
-    right: 90px;
+.present:hover .present__text {
+    top: 13px;
 }
 
 .present__img {
@@ -509,7 +518,7 @@
     left: 18px;
 }
 
-@keyframes  circle-scale {
+@keyframes circle-scale {
     0% {
         border: 2px solid #d3455a;
         transform: scale(0.5);
@@ -528,7 +537,7 @@
     }
 }
 
-@keyframes  circle-scale-second {
+@keyframes circle-scale-second {
     0% {
         border: 2px solid #d3455a;
         transform: scale(0.5);
@@ -547,7 +556,7 @@
     }
 }
 
-@keyframes  up-and-down {
+@keyframes up-and-down {
     0% {
         transform: translateY(0);
     }
@@ -559,3 +568,11 @@
     }
 }
 
+@keyframes up {
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,19 +1,7 @@
-@media screen and (max-width: 768px) {
-    .menu__link {
-        font-size: 14px;
-    }
-
-    .header__contact {
-        color: #eba8b1;
-    }
-
-    .menu {
-        margin-left: 100px;
-    }
-
+@media screen and (max-width: 1130px) {
     .main__container {
         flex-direction: column;
-        height: 960px;
+
     }
 
     .main__info {
@@ -24,8 +12,8 @@
         max-width: 529px;
         height: 438px;
         position: relative;
-        top: -220px;
-        left: 180px;
+        top: -518px;
+        left: 485px;
     }
 
     .advantages {
@@ -185,14 +173,124 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 911px) {
+    .menu__link {
+        font-size: 14px;
+    }
 
+    .menu {
+        margin-left: 100px;
+    }
+
+    .main__container {
+        flex-direction: column;
+        height: 960px;
+    }
+
+    .main__info {
+        max-width: 580px;
+    }
+
+    .main__img {
+        max-width: 529px;
+        height: 438px;
+        position: relative;
+        top: -220px;
+        left: 180px;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .header__contact {
+        color: #eba8b1;
+    }
+
+    .menu__list {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 698px){
+    .main__img {
+        left: 180px;
+    }
+
+    .img__macaroons {
+        left: -118px;
+        top: 130px;
+    }
+
+    .img_shaky {
+        left: -124px;
+    }
+
+    .img_shaky-right {
+        left: 528px
+    }
+}
+
+@media screen and (max-width: 622px) {
     .container {
         max-width: 345px;
     }
 
+    .header__container {
+        max-width: 600px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger__svg {
+
+        fill: #821328;
+    }
+
     .menu {
-         display: none;
+        display: none;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000c9;
+        z-index: 7;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #ffffff;
+        position: absolute;
+        top: 25px;
+        right: 31px;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 374px;
+        margin: 0 auto;
+    }
+
+    .menu__item {
+        margin: 15px 0;
+
+    }
+
+    .menu__link {
+        color: #ffffff;
+        text-decoration: none;
     }
 
     .main {
