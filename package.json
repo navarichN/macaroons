@@ -1,0 +1,21 @@
+{
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  },
+  "name": "kt10macaroons",
+  "version": "1.0.0",
+  "description": "landing for selling macaroons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anastasia",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "gulp-watch-less": "^1.0.1",
+    "less": "^4.2.0"
+  }
+}
