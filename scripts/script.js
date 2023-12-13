@@ -1,5 +1,25 @@
 $(document).ready(function () {
 
+    document.getElementById("main__action").onclick = function () {
+        document.getElementById("choice").scrollIntoView({behavior: "smooth"});
+    }
+
+    let links = document.querySelectorAll('.menu__link');
+    for (let i = 0; i < links.length; i++) {
+        links[i].onclick = function () {
+            document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: "smooth"});
+        }
+    }
+
+    let buttons = document.getElementsByClassName('choice__item-button');
+    let products = document.getElementsByClassName('choice__item');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = function (e) {
+            document.getElementById("choose").value = products[i].children[1].innerText;
+            document.getElementById("order").scrollIntoView({behavior: "smooth"});
+        }
+    }
+
     let inputArr = $("input");
 
     inputArr.on("focusout", function (e) {
@@ -65,7 +85,7 @@ $(document).ready(function () {
                         $('#form').remove()
                         $('.gratitude').css('display', 'flex')
                     } else {
-                        alert('Возникла ошибка при оформлении заказа, позвоните нам и сделайте заказ')
+                        alert('An error occurred while placing the order, please call us to place your order.')
                     }
                 });
         }

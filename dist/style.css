@@ -42,7 +42,7 @@
 .action {
   border-radius: 60px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 21px;
   background-image: -moz-linear-gradient(90deg, #71081e 0%, #d7485c 100%);
   background-image: -webkit-linear-gradient(90deg, #71081e 0%, #d7485c 100%);
   background-image: -ms-linear-gradient(90deg, #71081e 0%, #d7485c 100%);
@@ -65,9 +65,11 @@
 }
 .burger {
   display: none;
+  cursor: pointer;
 }
 .close {
   display: none;
+  cursor: pointer;
 }
 .menu__list {
   display: flex;
@@ -76,11 +78,12 @@
   font-family: GilroyMedium, sans-serif;
 }
 .menu__link {
-  font-size: 14px;
+  font-size: 18px;
   color: #821328;
   margin-right: 40px;
   text-decoration: underline;
   text-decoration-color: #eba8b1;
+  cursor: pointer;
 }
 .menu__link:hover {
   text-decoration-color: #821328;
@@ -91,13 +94,13 @@
 .logo__text {
   font-family: Tavolga, sans-serif;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 21px;
   color: #ffffff;
 }
 .header__contact,
 .footer__contact {
   font-family: GilroyMedium, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
 }
 .main {
@@ -111,21 +114,21 @@
   height: 672px;
 }
 .main__info {
-  padding-top: 108px;
-  max-width: 577px;
+  padding-top: 85px;
+  max-width: 540px;
 }
 .main__title {
   font-family: Tavolga, sans-serif;
-  font-size: 54px;
+  font-size: 70px;
   color: #ffffff;
   font-weight: lighter;
   z-index: -3;
 }
 .main__proposition {
-  font-size: 18px;
+  font-size: 25px;
   max-width: 420px;
-  margin-top: 36px;
-  margin-bottom: 89px;
+  margin-top: -27px;
+  margin-bottom: 52px;
   color: #ffffff;
   font-family: GilroyRegular, sans-serif;
 }
@@ -192,14 +195,14 @@
   color: #331907;
 }
 .advantages__text {
-  font-size: 18px;
+  font-size: 21px;
   color: #331907;
   margin-top: 60px;
   max-width: 405px;
   font-family: GilroyRegular, sans-serif;
 }
 .advantages__item {
-  max-width: 219px;
+  max-width: 250px;
 }
 .advantages__item__number {
   position: relative;
@@ -216,7 +219,7 @@
 }
 .advantages__item__description {
   font-family: GilroyMedium, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 20px;
 }
 .advantages__item__circle {
@@ -274,7 +277,7 @@
 }
 .choice__item-title {
   font-family: Tavolga, sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   margin-top: -38px;
   color: #ffffff;
 }
@@ -323,7 +326,7 @@
 }
 .order__description {
   font-family: GilroyRegular, sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   max-width: 406px;
   margin-top: 40px;
   margin-bottom: 48px;
@@ -347,7 +350,7 @@
   justify-content: center;
 }
 .gratitude__text {
-  font-size: 18px;
+  font-size: 21px;
   font-family: GilroyRegular, sans-serif;
   color: #331907;
 }
@@ -356,6 +359,9 @@
   text-align: center;
   margin-top: -18px;
   color: red;
+}
+.order__check__first {
+  margin-top: -26px;
 }
 .order__input {
   font-family: GilroyBold, sans-serif;
@@ -369,7 +375,7 @@
 }
 .order__input__title {
   font-family: GilroyBold, sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   margin-bottom: 25px;
 }
 .order__input__choice {
@@ -414,7 +420,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 123px;
+  max-width: 160px;
 }
 .insta__img {
   width: 35px;
@@ -444,17 +450,26 @@
   display: block;
   position: absolute;
   padding-top: 12px;
-  padding-left: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
   top: 120px;
-  right: 92px;
-  width: 183px;
-  height: 64px;
+  right: 110px;
+  width: 180px;
+  height: 50px;
   text-align: left;
   font-family: GilroyMedium, sans-serif;
   font-size: 15px;
-  background: no-repeat url("/images/rect.png");
   color: #821328;
   transition: all 0.5s ease;
+  border: 2px solid #ac2d42;
+  background-color: #ffefef;
+  border-radius: 20px;
+}
+.present__text:after {
+  content: url("../images/polygon.png");
+  position: relative;
+  left: 152px;
+  bottom: 9px;
 }
 .present__img {
   position: relative;
@@ -576,7 +591,7 @@
     left: 485px;
   }
   .advantages {
-    height: 1262px;
+    height: 1326px;
   }
   .advantages__container {
     display: grid;
@@ -633,7 +648,7 @@
     left: 1px;
   }
   .advantages__item__description {
-    height: 87px;
+    height: 117px;
   }
   .choice {
     height: 1018px;
@@ -850,7 +865,7 @@
     margin-bottom: 43px;
   }
   .advantages__item__description {
-    font-size: 13px;
+    font-size: 17px;
     margin-top: -20px;
     max-width: 160px;
   }

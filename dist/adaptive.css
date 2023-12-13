@@ -13,7 +13,7 @@
     left: 485px;
   }
   .advantages {
-    height: 1262px;
+    height: 1326px;
   }
   .advantages__container {
     display: grid;
@@ -70,7 +70,7 @@
     left: 1px;
   }
   .advantages__item__description {
-    height: 87px;
+    height: 117px;
   }
   .choice {
     height: 1018px;
@@ -287,7 +287,7 @@
     margin-bottom: 43px;
   }
   .advantages__item__description {
-    font-size: 13px;
+    font-size: 17px;
     margin-top: -20px;
     max-width: 160px;
   }

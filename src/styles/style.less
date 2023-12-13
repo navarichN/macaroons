@@ -4,7 +4,7 @@
 @bg-color-light: #ffefef;
 @text-color: #331907;
 @accent-color: #821328;
-@sub-font: 18px;
+@sub-font: 21px;
 @white-color: #ffffff;
 @placeholder: #760c22;
 
@@ -89,10 +89,12 @@
 
 .burger {
     display: none;
+    cursor: pointer;
 }
 
 .close {
     display: none;
+    cursor: pointer;
 }
 
 .menu {
@@ -103,11 +105,12 @@
         font-family: GilroyMedium, sans-serif;
     }
     &__link {
-        font-size: 14px;
+        font-size: 18px;
         color: @accent-color;
         margin-right: 40px;
         text-decoration: underline;
         text-decoration-color: @bg-color;
+        cursor: pointer;
         &:hover {
             text-decoration-color: @accent-color;
             text-decoration-thickness: 2px;
@@ -128,7 +131,7 @@
 
 .header__contact, .footer__contact {
     font-family: GilroyMedium, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: @white-color;
 }
 
@@ -143,23 +146,23 @@
     }
 
     &__info {
-        padding-top: 108px;
-        max-width: 577px;
+        padding-top: 85px;
+        max-width: 540px;
     }
 
     &__title {
         font-family: Tavolga, sans-serif;
-        font-size: 54px;
+        font-size: 70px;
         color: @white-color;
         font-weight: lighter;
         z-index: -3;
     }
 
     &__proposition {
-        font-size:@sub-font;
+        font-size: 25px;
         max-width: 420px;
-        margin-top: 36px;
-        margin-bottom: 89px;
+        margin-top: -27px;
+        margin-bottom: 52px;
         color: @white-color;
         font-family: GilroyRegular, sans-serif;
     }
@@ -249,7 +252,7 @@
     }
 
     &__item {
-        max-width: 219px;
+        max-width: 250px;
         &__number {
             position: relative;
             top: 15px;
@@ -265,7 +268,7 @@
         }
         &__description {
             font-family: GilroyMedium, sans-serif;
-            font-size: 15px;
+            font-size: 18px;
             margin-top: 20px;
         }
     }
@@ -427,6 +430,9 @@
         text-align: center;
         margin-top: -18px;
         color: red;
+        &__first {
+            margin-top: -26px;
+        }
     }
     &__input {
         font-family: GilroyBold, sans-serif;
@@ -494,7 +500,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 123px;
+        max-width: 160px;
     }
     &__img {
         width: 35px;
@@ -525,22 +531,33 @@
         display: block;
         position: absolute;
         padding-top: 12px;
-        padding-left:@sub-font;
+        padding-left: 10px;
+        padding-right: 10px;
         top: 120px;
-        right: 92px;
-        width: 183px;
-        height: 64px;
+        right: 110px;
+        width: 180px;
+        height: 50px;
         text-align: left;
         font-family: GilroyMedium, sans-serif;
         font-size: 15px;
-        background: no-repeat url("/images/rect.png");
+        //background: no-repeat url("/images/rect.png");
         color: @accent-color;
         transition: all 0.5s ease;
+        border: 2px solid #ac2d42;
+        background-color: #ffefef;
+        border-radius: 20px;
+
+        &:after {
+            content: url("../images/polygon.png");
+            position: relative;
+            left: 152px;
+            bottom: 9px;
+        }
     }
     &__img {
         position: relative;
         bottom: 74px;
-        left:@sub-font;
+        left: 18px;
     }
 }
 
